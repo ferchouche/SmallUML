@@ -1,0 +1,69 @@
+-- @path MM=/SmallUML/model/smalluml.ecore
+-- @path MM1=/UML/model/uml.ecore
+
+
+module Small2UML;
+create OUT: MM1 from IN: MM;
+
+rule RClass {
+	from
+		e: MM!Class
+	to
+		out: MM1!Class (
+			name <- e.name,
+			superClass <- e.extends,
+			isAbstract <- e.abstract,
+			ownedAttribute <- e.attributes->collect(iterator | iterator),
+			ownedOperation <- e.operations
+		)
+}
+
+rule RAttribute {
+	from
+		e : MM!Attribute
+	to 
+		out : MM1!Property (
+			name <- e.name,
+			type <- e.type
+		)
+}
+
+rule RParameter {
+	from
+		e : MM!Parameter		
+	to
+		out : MM1!Parameter (
+			name <- e.name,
+			type <- e.type
+			)	
+}
+
+rule ROperation {
+	from
+		e : MM!Operation
+	to 
+		out : MM1!Operation (
+			name <- e.name,
+			type <- e.typeReturn,
+			ownedParameter <- e.parameters
+		)
+}
+
+rule RCardinalities {
+	from
+		e : MM!Cardinalities
+	to 
+		out : MM1!Property (
+			lower <- e.lowerbound,
+			upper <- e.upperbound
+		)
+}
+
+rule REnumeration {
+	from
+		e : MM!Enumeration
+	to 
+		out : MM1!Enumeration (
+			name <- e.name
+		)
+}

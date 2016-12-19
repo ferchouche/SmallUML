@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uml -->
+      <package
+            uri="http:///uml/activities.ecore"
+            class="uml.activities.ActivitiesPackage"
+            genModel="model/uml.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uml -->
+      <package
+            uri="http:///uml/commonBehavior.ecore"
+            class="uml.commonBehavior.CommonBehaviorPackage"
+            genModel="model/uml.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uml -->
+      <package
+            uri="http:///uml/commonStructure.ecore"
+            class="uml.commonStructure.CommonStructurePackage"
+            genModel="model/uml.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uml -->
+      <package
+            uri="http:///uml/values.ecore"
+            class="uml.values.ValuesPackage"
+            genModel="model/uml.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uml -->
+      <package
+            uri="http:///uml/packages.ecore"
+            class="uml.packages.PackagesPackage"
+            genModel="model/uml.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uml -->
+      <package
+            uri="http:///uml/structuredClassifiers.ecore"
+            class="uml.structuredClassifiers.StructuredClassifiersPackage"
+            genModel="model/uml.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uml -->
+      <package
+            uri="http:///uml/simpleClassifiers.ecore"
+            class="uml.simpleClassifiers.SimpleClassifiersPackage"
+            genModel="model/uml.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uml -->
+      <package
+            uri="http:///uml/classification.ecore"
+            class="uml.classification.ClassificationPackage"
+            genModel="model/uml.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uml -->
+      <package
+            uri="http:///uml/deployments.ecore"
+            class="uml.deployments.DeploymentsPackage"
+            genModel="model/uml.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uml -->
+      <package
+            uri="http:///uml/stateMachines.ecore"
+            class="uml.stateMachines.StateMachinesPackage"
+            genModel="model/uml.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uml -->
+      <package
+            uri="http:///uml/useCases.ecore"
+            class="uml.useCases.UseCasesPackage"
+            genModel="model/uml.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uml -->
+      <package
+            uri="http:///uml/actions.ecore"
+            class="uml.actions.ActionsPackage"
+            genModel="model/uml.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uml -->
+      <package
+            uri="http:///uml/interactions.ecore"
+            class="uml.interactions.InteractionsPackage"
+            genModel="model/uml.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uml -->
+      <package
+            uri="http:///uml/informationFlows.ecore"
+            class="uml.informationFlows.InformationFlowsPackage"
+            genModel="model/uml.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uml -->
+      <package
+            uri="http://www.eclipse.org/uml2/5.0.0/Types"
+            class="types.TypesPackage"
+            genModel="model/uml.genmodel"/>
+   </extension>
+
+</plugin>

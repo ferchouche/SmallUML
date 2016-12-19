@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ASCII"?>
+<smalluml:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:smalluml="http://www.univ-nantes.fr/smalluml" name="new">
+  <entities xsi:type="smalluml:Class" name="Feuille">
+    <attributes name="premier">
+      <type xsi:type="smalluml:BooleanType"/>
+    </attributes>
+    <attributes name="deuxieme">
+      <type xsi:type="smalluml:RealType"/>
+    </attributes>
+  </entities>
+  <entities xsi:type="smalluml:Class" name="Livre" extends="//@entities.2">
+    <attributes name="troisieme">
+      <type xsi:type="smalluml:IntegerType"/>
+    </attributes>
+    <operations name="oper1">
+      <typeReturn xsi:type="smalluml:IntegerType"/>
+      <parameters name="par1">
+        <type xsi:type="smalluml:BooleanType"/>
+      </parameters>
+      <parameters name="par2">
+        <type xsi:type="smalluml:Enumeration" name="gt">
+          <variable>v</variable>
+          <variable>r</variable>
+          <variable>b</variable>
+        </type>
+      </parameters>
+    </operations>
+    <operations name="oper2">
+      <typeReturn xsi:type="smalluml:IntegerType"/>
+      <parameters name="par1">
+        <type xsi:type="smalluml:BooleanType"/>
+      </parameters>
+      <parameters name="par2">
+        <type xsi:type="smalluml:IntegerType"/>
+      </parameters>
+    </operations>
+  </entities>
+  <entities xsi:type="smalluml:Class" name="LivreAbst" abstract="true">
+    <attributes name="abstr1">
+      <type xsi:type="smalluml:BooleanType"/>
+    </attributes>
+    <attributes name="abstr2">
+      <type xsi:type="smalluml:RealType"/>
+    </attributes>
+  </entities>
+  <entities xsi:type="smalluml:Association" name="livrefeuille" targetclass="//@entities.1" sourceclass="//@entities.0">
+    <cardinalities lowerbound="1" upperbound="1"/>
+  </entities>
+</smalluml:ClassDiagram>

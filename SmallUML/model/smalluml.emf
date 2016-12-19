@@ -1,0 +1,63 @@
+@namespace(uri="http://www.univ-nantes.fr/smalluml", prefix="smalluml")
+package smalluml;
+
+class Class extends Entity {
+  ref Attribute[+] attributes;
+  ref Class ~extends;
+  ref Operation[*] operations;
+  attr boolean ~abstract;
+}
+
+class ClassDiagram {
+  attr String name;
+  ref Entity[*] entities;
+}
+
+class Operation {
+  attr String name;
+  ref Type typeReturn;
+  ref Parameter[*] parameters;
+}
+
+class Attribute {
+  attr String name;
+  ref Type[1] type;
+}
+
+class Parameter {
+  attr String name;
+  ref Type[1] type;
+}
+
+class Cardinalities {
+  attr int[1] lowerbound;
+  attr int[1] upperbound;
+}
+
+class Association extends Entity {
+  ref Cardinalities[1] cardinalities;
+  ref Class[1] targetclass;
+  ref Class[1] sourceclass;
+}
+
+class Type {
+  attr String name;
+}
+
+class BooleanType extends Type {
+}
+
+class RealType extends Type {
+}
+
+class IntegerType extends Type {
+}
+
+class Enumeration extends Type {
+  attr String[*] variable;
+}
+
+class Entity {
+  attr String name;
+}
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:uml.classification="http:///uml/classification.ecore" xmlns:uml.simpleClassifiers="http:///uml/simpleClassifiers.ecore" xmlns:uml.structuredClassifiers="http:///uml/structuredClassifiers.ecore">
+  <uml.structuredClassifiers:Class name="Feuille">
+    <ownedAttribute name="premier"/>
+    <ownedAttribute name="deuxieme"/>
+  </uml.structuredClassifiers:Class>
+  <uml.structuredClassifiers:Class name="Livre">
+    <ownedAttribute name="troisieme"/>
+    <ownedOperation name="oper1">
+      <ownedParameter name="par1"/>
+      <ownedParameter name="par2" type="/4"/>
+    </ownedOperation>
+    <ownedOperation name="oper2">
+      <ownedParameter name="par1"/>
+      <ownedParameter name="par2"/>
+    </ownedOperation>
+  </uml.structuredClassifiers:Class>
+  <uml.structuredClassifiers:Class name="LivreAbst" isAbstract="true">
+    <ownedAttribute name="abstr1"/>
+    <ownedAttribute name="abstr2"/>
+  </uml.structuredClassifiers:Class>
+  <uml.classification:Property/>
+  <uml.simpleClassifiers:Enumeration name="gt"/>
+</xmi:XMI>

@@ -1,0 +1,23 @@
+ClassDiagram new {
+	
+    Class Feuille {
+		attributes (premier : Boolean, deuxieme : Real)
+	}
+	
+	Class Livre extends LivreAbst {
+		attributes (troisieme : Integer)
+		operations (
+			Integer oper1(par1 : Boolean, par2 : Enumeration gt {v, r, b}),  
+	        Integer oper2(par1 : Boolean, par2 : Integer)
+		           )
+	}
+	abstract Class LivreAbst {
+		attributes (abstr1 : Boolean, abstr2 : Real)
+	}
+	
+	Association livrefeuille{
+		cardinalities {1, 1},
+		targetclass Livre,
+		sourceclass Feuille
+	}
+}
